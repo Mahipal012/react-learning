@@ -41,22 +41,39 @@ import './App.css'
 //     </>
 //   )
 // }
-function App(){
+// function App(){
   // const[name,setname]=useState("Tata")
   // const[year,setyear]=useState(18)
-  const[name,setname]=useState({
-    brand:"new",
-    year:23,
-    class:"first"
-  })
-  return(
+//   const[name,setname]=useState({
+//     brand:"new",
+//     year:23,
+//     class:"first"
+//   })
+//   return(
 
-    <>
-    <h1>my project</h1>
-    <h3>my car is{name.brand} it is {name.year}  yerarold it is {name.class} class</h3>
-    </>
+//     <>
+//     <h1>my project</h1>
+//     <h3>my car is{name.brand} it is {name.year}  yerarold it is {name.class} class</h3>
+//     </>
 
-  )
+//   )
+
+// }
+function Car(props){
+  return <h1>MY car name is{props.brand}</h1>
+}
+
+function App(){
+  const carName="ford";
+
+return(
+  <>
+
+  <h2>What is your car name</h2>
+  <Car brand={carName}/>
+  </>
+
+)
 
 }
 
